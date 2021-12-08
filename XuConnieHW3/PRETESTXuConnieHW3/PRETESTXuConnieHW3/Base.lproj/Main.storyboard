@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XuConnieHW3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMt-Xv-vuR">
+                                <rect key="frame" x="0.0" y="44" width="493" height="974"/>
+                                <color key="backgroundColor" red="0.95305818320000002" green="0.95264846089999999" blue="0.96863085029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="493" id="4Yj-t1-ipD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="974" id="fUb-F9-XqS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                <connections>
+                                    <action selector="backgroundButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fa-6J-dX1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OH-gX-tQc">
+                                <rect key="frame" x="89" y="168" width="250" height="34"/>
+                                <color key="backgroundColor" red="0.81663638350000001" green="0.78119283910000004" blue="0.94511836770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="DBA-uH-g8A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                <connections>
+                                    <action selector="doneDidTapped:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="lhF-yh-ttb"/>
+                                </connections>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pig" translatesAutoresizingMaskIntoConstraints="NO" id="M7a-TH-AgP">
+                                <rect key="frame" x="176.66666666666666" y="221.99999999999997" width="75" height="83.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="qmD-T4-IdH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu0-0O-Qm0">
+                                <rect key="frame" x="169.66666666666666" y="315.66666666666669" width="88.999999999999972" height="67"/>
+                                <color key="tintColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pig">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="44"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pigButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eY-Du-eS8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cow" translatesAutoresizingMaskIntoConstraints="NO" id="Fne-aj-Q0T">
+                                <rect key="frame" x="176.66666666666666" y="415.66666666666669" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="QWG-tV-qI1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWd-Ar-wfK">
+                                <rect key="frame" x="155.66666666666666" y="500.66666666666674" width="116.99999999999997" height="67"/>
+                                <color key="tintColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cow">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="44"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cowButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gX4-k0-kKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTr-C9-efN">
+                                <rect key="frame" x="140.66666666666666" y="800" width="146.99999999999997" height="67"/>
+                                <color key="backgroundColor" red="0.81663638350000001" green="0.78119283910000004" blue="0.94511836770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="44"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpf-ad-cWr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-fh-q3n">
+                                <rect key="frame" x="184" y="758" width="60" height="17"/>
+                                <color key="tintColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This or That" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4M-bd-Zjd">
+                                <rect key="frame" x="82" y="90" width="264" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                <color key="textColor" red="0.39865356680000003" green="0.34435492750000002" blue="0.66669768100000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95305818320000002" green="0.95264846089999999" blue="0.96863085029999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="BMt-Xv-vuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0XZ-mC-71G"/>
+                            <constraint firstItem="KTr-C9-efN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6a4-hh-Pht"/>
+                            <constraint firstItem="v4M-bd-Zjd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="7BD-hn-afY"/>
+                            <constraint firstItem="M7a-TH-AgP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Zo-0M-hg8"/>
+                            <constraint firstItem="BMt-Xv-vuR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bia-8w-mmu"/>
+                            <constraint firstItem="v4M-bd-Zjd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCr-9o-EDR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTr-C9-efN" secondAttribute="bottom" constant="25" id="OJB-mu-8jT"/>
+                            <constraint firstItem="2OH-gX-tQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PRw-Hq-gXw"/>
+                            <constraint firstItem="hyo-fh-q3n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PmK-Yk-YZ1"/>
+                            <constraint firstItem="eWd-Ar-wfK" firstAttribute="top" secondItem="Fne-aj-Q0T" secondAttribute="bottom" constant="10" id="Rza-I0-FKM"/>
+                            <constraint firstItem="Fne-aj-Q0T" firstAttribute="top" secondItem="yu0-0O-Qm0" secondAttribute="bottom" constant="33" id="UCe-oP-gv2"/>
+                            <constraint firstItem="eWd-Ar-wfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a3N-bc-MB4"/>
+                            <constraint firstItem="Fne-aj-Q0T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faC-1y-1NU"/>
+                            <constraint firstItem="yu0-0O-Qm0" firstAttribute="top" secondItem="M7a-TH-AgP" secondAttribute="bottom" constant="10" id="j5D-hA-NoB"/>
+                            <constraint firstItem="yu0-0O-Qm0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jMU-In-9eV"/>
+                            <constraint firstItem="KTr-C9-efN" firstAttribute="top" secondItem="hyo-fh-q3n" secondAttribute="bottom" constant="25" id="lmP-l8-7aM"/>
+                            <constraint firstItem="M7a-TH-AgP" firstAttribute="top" secondItem="2OH-gX-tQc" secondAttribute="bottom" constant="20" id="mTf-VP-YdQ"/>
+                            <constraint firstItem="hyo-fh-q3n" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eWd-Ar-wfK" secondAttribute="bottom" constant="9.5" id="sbL-Y2-6eL"/>
+                            <constraint firstItem="2OH-gX-tQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tf0-Hj-5Bl"/>
+                            <constraint firstItem="v4M-bd-Zjd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vAG-3c-LHN"/>
+                            <constraint firstItem="2OH-gX-tQc" firstAttribute="top" secondItem="v4M-bd-Zjd" secondAttribute="bottom" constant="24" id="wAc-H3-70A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="2OH-gX-tQc" id="vFE-DA-Btg"/>
+                        <outlet property="resultLabel" destination="hyo-fh-q3n" id="2EA-v3-HfM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.635514018691588" y="67.386609071274307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cow" width="75" height="75"/>
+        <image name="Pig" width="75" height="83.333335876464844"/>
+    </resources>
+</document>
